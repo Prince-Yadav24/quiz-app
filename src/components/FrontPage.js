@@ -1,4 +1,5 @@
 import React from "react";
+import "./FrontPage.css"
 
 const FrontPage = (props) => {
   const question = props.question;
@@ -22,6 +23,7 @@ const FrontPage = (props) => {
       
       <input type="radio" id={question.fourthOption} value={question.fourthOption} name="option"/>
       <label htmlFor={question.fourthOption}>{question.fourthOption}</label>
+      <p className="sequence">{question.id} of {props.len}</p>
       <hr />
       </form>
     </div>

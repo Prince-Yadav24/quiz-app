@@ -34,7 +34,7 @@ function App() {
     <div>
       <Header counter={questions.length} />
       {questions.map((question) => {
-        return <FrontPage key={question.id} question={question} />;
+        return <FrontPage key={question.id} question={question} len={questions.length}/>;
       })}
 
       <Footer />
