@@ -6,21 +6,24 @@ const FrontPage = (props) => {
     <div>
       <p>{question.qus}</p>
 
-      <input type="radio" id="firstOption" value={question.firstOption} />
-      <label>{question.firstOption}</label>
+      <form>
+
+      <input type="radio" id={question.firstOption} value={question.firstOption} name="option" />
+      <label htmlFor={question.firstOption}>{question.firstOption}</label>
       <br />
 
-      <input type="radio" id="secondOption" value={question.secondOption} />
-      <label>{question.secondOption}</label>
+      <input type="radio" id={question.secondOption} value={question.secondOption} name="option" />
+      <label htmlFor={question.secondOption}>{question.secondOption}</label>
       <br />
-
-      <input type="radio" id="thirdOption" value={question.thirdOption} />
-      <label>{question.thirdOption}</label>
+      
+      <input type="radio" id={question.thirdOption} value={question.thirdOption} name="option" />
+      <label htmlFor={question.thirdOption}>{question.thirdOption}</label>
       <br />
-
-      <input type="radio" id="forthOption" value={question.fourthOption} />
-      <label>{question.fourthOption}</label>
+      
+      <input type="radio" id={question.fourthOption} value={question.fourthOption} name="option"/>
+      <label htmlFor={question.fourthOption}>{question.fourthOption}</label>
       <hr />
+      </form>
     </div>
   );
 };
